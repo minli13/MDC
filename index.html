@@ -22,20 +22,46 @@
         <p>Want to eat out? What are you craving?</p>
     </div>
 
-        <!-- search bar -->
-        <div class="search">
-            <form id="searchForm">
-                <input type="text" id="searchInput" placeholder="Enter your craving">
-                <select id="filterOptions">
-                    <option value="all">All</option>
-                    <option value="cheap">Cheap</option>
-                    <option value="moderate">Moderate</option>
-                    <option value="expensive">Expensive</option>
-                </select> 
-                <button type="submit">Search</button>
-                
-            </form>
-        </div>
+      <div id="search-bar">
+        <label for="search-name">Restaurant Name:</label>
+        <input type="text" class="search-input" id="search-name" placeholder="Search by name">
+
+        <label for="search-distance">Distance (miles):</label>
+        <input type="number" class="search-input" id="search-distance" placeholder="Search by distance">
+
+
+        <label for="search-price">Price Range:</label>
+        <select class="search-input" id="search-price">
+            <option value="">All Prices</option>
+            <option value="$">Low ($)</option>
+            <option value="$$">Medium ($$)</option>
+            <option value="$$$">High ($$$)</option>
+        </select>
+
+        <label for="search-food">Cuisine Type:</label>
+        <input type="text" class="search-input" id="search-food" placeholder="Search by type of food">
+
+        <label for="search-hours">Hour Open:</label>
+        <input type="time" class="search-input" id="search-hours" placeholder="Search by hours open">
+        
+        <button id="search-button" onclick="searchRestaurants()">Search</button>
+
+    </div>
+
+      <table id="restaurant-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Distance</th>
+                <th> Average Price</th>
+                <th>Cuisine</th>
+                <th>Hours Open</th>
+            </tr>
+        </thead>
+        <tbody id="table-body">
+            <!-- Restaurant data will be dynamically added here -->
+        </tbody>
+    </table>
 
     </body>
 </html>
