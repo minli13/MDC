@@ -34,7 +34,8 @@ nav > a {
 }
 
 body {
-    background-color: #f2fbe0;
+    /* background-color: #f2fbe0; */
+    background-color: linear-gradient(#01426A 75%, #00843D 50%, #FEB500 25%);
     width: 100%;
 }
 
@@ -75,6 +76,7 @@ h3 {
 .instructions {
     width: 50%;
     font-size: 22px;
+}
 
 body {
   font-family: Arial, sans-serif;
