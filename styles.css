@@ -18,7 +18,7 @@ p {
 
 .Header{
     position: fixed;
-    text-align: right; /*shifts to the right*/
+    text-align: left; /*shifts to the right*/
     color: #FFDB59;
     font-size: 30px; /*changes font size to 30px*/
     word-spacing: 50px; /*adds spaces between the words*/
@@ -29,3 +29,22 @@ p {
     z-index: 999;
     width: 100%;
 }
+
+/* Add your CSS styles here */
+.recipes-heading {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: #333; /* Change the color as desired */
+    margin-top: 50px; /* Adjust the margin-top as needed */
+}
+
+.breaky{
+    text-decoration: underline;
+}
+
+.buttons {
+    margin-right: 15px;
+    margin-left: auto;
+}
+
