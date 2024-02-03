@@ -57,11 +57,11 @@ h3 {
     color: #1D4E89;
 }
 
-.breakfast > h2 {
+.breakfast > h2, .lunch > h2, .dinner > h2, {
     text-align: center;
 }
 
-.breakfast-1, .breakfast-2 {
+.breakfast-1, .breakfast-2, .breakfast-3, .lunch-1, .lunch-2, .lunch-3, .dinner-1, .dinner-2, .dinner-3 {
     display: flex;
     flex: wrap;
     width: 100%;
@@ -75,6 +75,7 @@ h3 {
 .instructions {
     width: 50%;
     font-size: 22px;
+}
 
 body {
   font-family: Arial, sans-serif;
