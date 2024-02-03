@@ -48,12 +48,64 @@
 
     </div>
 
+    <div id="scheduler">
+        <p>SCHEDULER</p>
+        <label for="search-hours">Enter the time of your first class:</label>
+        <input type="time" class="search-input" id="search-hours-input" placeholder="Search by hours open"><br>
+        <button id="search-button" onclick="calculateTime()">Calculate</button>
+        <p id="output"></p>
+    </div>
+    
+    <script>
+       function calculateTime() {
+        //get input time
+        var inputTime = document.getElementById("search-hours-input").value;
+
+        //split the input time into hours and minutes
+        var parts = inputTime.split(":");
+        var hours = parseInt(parts[0], 10);
+        var minutes = parseInt(parts[1], 10);
+
+        //10 hrs from first class
+        hours -= 11;
+
+        //if the result is before midnight)
+        if (hours < 0) {
+            hours += 24; // add 24 hours to get the correct hour
+        }
+
+        
+        var period = "AM";
+        if (hours >= 12) {
+            period = "PM";
+        }
+
+       
+        hours = hours % 12;
+        if (hours === 0) {
+            hours = 12; // 12-hour clock, so 0 becomes 12
+        }
+
+        //(hh:mm AM/PM)
+        var outputTime = ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + " " + period;
+
+    
+  
+        var sentence = "You should sleep at around: " + outputTime +". You have 2 hours to get ready and eat breakfast. You have 1 hour to commute and get to class!";
+    
+        alert(sentence);
+    }
+        
+    </script>
+    
+    
+
       <table id="restaurant-table">
         <thead>
             <tr>
                 <th>Name</th>
                 <th>Distance</th>
-                <th> Average Price</th>
+                <th>Average Price</th>
                 <th>Cuisine</th>
                 <th>Hours Open</th>
             </tr>
