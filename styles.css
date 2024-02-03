@@ -43,14 +43,10 @@ body {
     color: #1D4E89;
 }
 
-.breakfast {
-    margin: 20px;
-}
-
 h2 {
-    background-color: #ACC18A;
     font-size: 30px;
     text-align: center;
+    width: 100%;
 }
 
 h3 {
@@ -58,16 +54,43 @@ h3 {
     color: #1D4E89;
 }
 
-.breakfast > h2 {
-    text-align: center;
+.breakfast-header {
+  background-color: #FEB500;
+  color: white;
 }
 
-.breakfast-1, .breakfast-2 {
+.lunch-header {
+  background-color: #00843D;
+  color: white;
+}
+
+.dinner-header {
+  background-color: #01426A;
+  color: white;
+}
+
+
+.breakfast-1, .breakfast-2, .breakfast-3 {
     display: flex;
     flex: wrap;
     width: 100%;
+    background-color: #FFE299;
+
 }
 
+.lunch-1, .lunch-2, .lunch-3 {
+  display: flex;
+  flex: wrap;
+  width: 100%;
+  background-color: #DAFEB7;
+}
+
+.dinner-1, .dinner-2, .dinner-3 {
+  display: flex;
+  flex: wrap;
+  width: 100%;
+  background-color: #86BEE1;
+}
 
 .ingredients {
     width: 50%;
@@ -80,7 +103,6 @@ h3 {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
   display: flex;
