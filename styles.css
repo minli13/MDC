@@ -158,6 +158,9 @@ th {
 .search-input {
   margin-right: 10px;
   margin-bottom: 10px;
+}
 
+#restaurant-table {
+  display: none;
 }
 
