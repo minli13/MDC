@@ -5,3 +5,27 @@ h1 {
 p {
     text-align: center;
 }
+
+
+.search {
+    text-align: center;
+    margin-top: 20px; 
+}
+
+#searchForm {
+    display: inline-block;
+}
+
+.Header{
+    position: fixed;
+    text-align: right; /*shifts to the right*/
+    color: #FFDB59;
+    font-size: 30px; /*changes font size to 30px*/
+    word-spacing: 50px; /*adds spaces between the words*/
+    display: flex; /*flex box that makes sure everything stays as a row despite change in screen size*/
+    align-items: baseline; /*makes all the elements (words and circle) line up*/
+    flex-direction: row; /*flex box that makes sure everything stays as a row despite change in screen size*/
+    top: 10px;
+    z-index: 999;
+    width: 100%;
+}

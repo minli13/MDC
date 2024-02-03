@@ -7,7 +7,35 @@
     <title>CPP Food Explorer</title>
 </head>
 <body>
+    
+	<div class="Header">
+		<div class="init">
+		</div>
+
+		<div class="buttons">
+			<a href="index.html">Home</a>
+			<a href="recipes.html">Recipes</a>
+		</div>
+	</div>
+
+
     <h1>CPP Food Explorer</h1>
     <p>Welcome to CPP's Food Explorer!</p>
+    <p>What are you craving?</p>
+
+        <!-- search bar -->
+        <div class="search">
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Enter your craving">
+                <select id="filterOptions">
+                    <option value="all">All</option>
+                    <option value="cheap">Cheap</option>
+                    <option value="moderate">Moderate</option>
+                    <option value="expensive">Expensive</option>
+                </select> 
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
 </body>
 </html>
