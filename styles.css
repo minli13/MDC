@@ -1,12 +1,3 @@
-h1 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-
 .search {
     text-align: center;
     margin-top: 20px; 
@@ -16,37 +7,74 @@ p {
     display: inline-block;
 }
 
-.Header{
-    position: fixed;
-    text-align: left; /*shifts to the right*/
-    color: #FFDB59;
-    font-size: 30px; /*changes font size to 30px*/
-    word-spacing: 50px; /*adds spaces between the words*/
-    display: flex; /*flex box that makes sure everything stays as a row despite change in screen size*/
-    align-items: baseline; /*makes all the elements (words and circle) line up*/
-    flex-direction: row; /*flex box that makes sure everything stays as a row despite change in screen size*/
-    top: 10px;
-    z-index: 999;
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+
+p {
+    text-align: center;
+    font-size: 25px;
+}
+
+.Header {
+    height: 40px;
+    background-color: #ACC18A;
     width: 100%;
 }
 
-/* Add your CSS styles here */
+nav {
+    font-size: 25px;
+    text-align: right;
+}
+
+nav > a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+body {
+    background-color: #f2fbe0;
+    width: 100%;
+}
+
 .recipes-heading {
+    color: #1D4E89;
+}
+
+.breakfast {
+    margin: 20px;
+}
+
+h2 {
+    background-color: #ACC18A;
+    font-size: 30px;
     text-align: center;
-    font-family: Arial, sans-serif;
-    font-size: 28px;
-    color: #333; /* Change the color as desired */
-    margin-top: 50px; /* Adjust the margin-top as needed */
 }
 
-.breaky{
-    text-decoration: underline;
+h3 {
+    font-size: 27px;
+    color: #1D4E89;
 }
 
-.buttons {
-    margin-right: 15px;
-    margin-left: auto;
+.breakfast > h2 {
+    text-align: center;
 }
+
+.breakfast-1, .breakfast-2 {
+    display: flex;
+    flex: wrap;
+    width: 100%;
+}
+
+
+.ingredients {
+    width: 50%;
+    font-size: 22px;
+}
+.instructions {
+    width: 50%;
+    font-size: 22px;
 
 body {
   font-family: Arial, sans-serif;
@@ -103,4 +131,5 @@ th {
 .search-input {
   margin-right: 10px;
   margin-bottom: 10px;
+
 }
