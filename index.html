@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="styles.css" rel="stylesheet">
-    <title>CPP Food Explorer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet">
+  <title>CPP Food Explorer</title>
+  <script src="main.js"></script>
 </head>
+
 <body>
-    
-	<div class="Header"> 
-		<nav class="buttons">
-			<a href="index.html">Home</a>
-			<a href="recipes.html">Recipes</a>
-        </nav>
-	</div>
 
-    <div class="intro">
-        <h1>CPP Food Explorer</h1>
-        <p>Welcome to CPP's Food Explorer!</p>
-        <p>Want to eat at home? Check out at home<a href="recipes.html"> recipes!</a></p>
-        <p>Want to eat out? What are you craving?</p>
-    </div>
+  <div class="Header">
+    <nav class="buttons">
+      <a href="index.html">Home</a>
+      <a href="recipes.html">Recipes</a>
+    </nav>
+  </div>
 
-      <div id="search-bar">
-        <label for="search-name">Restaurant Name:</label>
-        <input type="text" class="search-input" id="search-name" placeholder="Search by name">
+  <div class="intro">
+    <h1>CPP Food Explorer</h1>
+    <p>Welcome to CPP's Food Explorer!</p>
+    <p>Want to eat at home? Check out at home<a href="recipes.html"> recipes!</a></p>
+    <p>Want to eat out? What are you craving?</p>
+  </div>
 
-        <label for="search-distance">Distance (miles):</label>
-        <input type="number" class="search-input" id="search-distance" placeholder="Search by distance">
+  <div id="search-bar">
+    <label for="search-name">Restaurant Name:</label>
+    <input type="text" class="search-input" id="search-name" placeholder="Search by name">
+
+    <label for="search-distance">Distance (miles):</label>
+    <input type="number" class="search-input" id="search-distance" placeholder="Search by distance">
 
 
-        <label for="search-price">Price Range:</label>
-        <select class="search-input" id="search-price">
-            <option value="">All Prices</option>
-            <option value="$">Low ($)</option>
-            <option value="$$">Medium ($$)</option>
-            <option value="$$$">High ($$$)</option>
-        </select>
+    <label for="search-price">Price Range:</label>
+    <select class="search-input" id="search-price">
+      <option value="">All Prices</option>
+      <option value="$">Low ($)</option>
+      <option value="$$">Medium ($$)</option>
+      <option value="$$$">High ($$$)</option>
+    </select>
 
-        <label for="search-food">Cuisine Type:</label>
-        <input type="text" class="search-input" id="search-food" placeholder="Search by type of food">
+    <label for="search-food">Cuisine Type:</label>
+    <input type="text" class="search-input" id="search-food" placeholder="Search by type of food">
 
-        <label for="search-hours">Hour Open:</label>
-        <input type="time" class="search-input" id="search-hours" placeholder="Search by hours open">
-        
-        <button id="search-button" onclick="searchRestaurants()">Search</button>
+    <label for="search-hours">Hour Open:</label>
+    <input type="time" class="search-input" id="search-hours" placeholder="Search by hours open">
 
-    </div>
+    <!-- <button id="search-button" onclick="searchRestaurants()">Search</button> -->
+    <button id="search-button">Search</button>
+
+  </div>
 
     <div id="scheduler">
         <p><u>SCHEDULER</u></p>
@@ -105,7 +109,7 @@
             <tr>
                 <th>Name</th>
                 <th>Distance</th>
-                <th>Average Price</th>
+                <th> Average Price</th>
                 <th>Cuisine</th>
                 <th>Hours Open</th>
             </tr>
@@ -115,5 +119,6 @@
         </tbody>
     </table>
 
-    </body>
+</body>
+
 </html>
